@@ -1,0 +1,45 @@
+import pytest
+
+
+@pytest.fixture
+def test_data():
+    return [{
+        'date': '2019-11-04T07:20:20.611890',
+        'description': 'Открытие вклада',
+        'id': 116832369,
+        'operationAmount': {'amount': '54150.89',
+                            'currency': {'code': 'USD', 'name': 'USD'}},
+        'to': 'Счет 85158542384610753332'},
+        {'date': '2019-12-05T09:37:15.543590',
+         'description': 'Перевод организации',
+         'from': 'Visa Platinum 28477438893689665',
+         'id': 544872369,
+         'operationAmount': {'amount': '454332.39',
+                             'currency': {'code': 'USD', 'name': 'USD'}},
+         'state': 'EXECUTED',
+         'to': 'Счет 96158586384610753655'},
+        {'date': '2019-10-05T11:32:11.124320',
+         'description': 'Перевод организации',
+         'from': 'Maestro 2842878893689012',
+         'id': 714232369,
+         'operationAmount': {'amount': '467443.31',
+                             'currency': {'code': 'RUB', 'name': 'руб.'}},
+         'state': 'EXECUTED',
+         'to': 'Счет 76158586384610753655'},
+        {'date': '2019-12-01T09:11:54.754390',
+         'description': 'Перевод организации',
+         'from': 'Visa Classic 4342878893624432',
+         'id': 664832969,
+         'operationAmount': {'amount': '88425.11',
+                             'currency': {'code': 'USD', 'name': 'USD'}},
+         'state': 'EXECUTED',
+         'to': 'МИР 44158586384610775391'},
+        {'date': '2019-12-07T06:17:14.634890',
+         'description': 'Перевод организации',
+         'from': 'Visa Classic 2842878893689012',
+         'id': 434832369,
+         'operationAmount': {'amount': '48150.39',
+                             'currency': {'code': 'USD', 'name': 'USD'}},
+         'state': 'EXECUTED',
+         'to': 'Счет 35158586384610753655'}
+    ]
